@@ -11,6 +11,8 @@ public class HelloWorldJdbc {
 	public static void main(String[] args) {
 		System.out.println("Hello JDBC");
 		try {
+			
+//			Class.forName("org.h2.Driver");
 			// create connection
 			Connection con = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
